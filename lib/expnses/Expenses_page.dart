@@ -243,6 +243,14 @@ class _ExpensePageAppState extends State<ExpensesPage> {
               _buildCategoryButton('Shopping', Colors.blue, Icons.shopping_cart),
             ],
           ),
+          // SizedBox(height: 1),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          _buildCategoryButton('Add New', Colors.lightBlueAccent, Icons.add),
+          _buildCategoryButton('Medical', Colors.green, Icons.medical_information),
+        ]
+      ),
           SizedBox(height: 10),
           Center(
             child: Text(
