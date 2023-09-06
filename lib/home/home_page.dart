@@ -98,6 +98,7 @@ class _HomePageState extends State<HomePage> {
       TimerPage(),
       SettingsPage(),
       ExpensesPage(username: widget.username),
+      ExpenseEntryPage(),
       LoginPage(),
       const Center(child: Text('Perform preset')),
       const Center(child: Text('Settings')),
@@ -134,12 +135,12 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_balance_wallet),
-            label: 'Tracker',
+            label: 'Expenses',
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.wallet_outlined),
-          //   label: 'Entry',
-          // ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.wallet_outlined),
+            label: 'Expense',
+          ),
 
         ],
       ),
